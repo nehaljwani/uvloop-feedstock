@@ -16,14 +16,16 @@ uvloop is implemented in Cython and uses libuv under the hood.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/uvloop-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/uvloop-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/uvloop-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/uvloop-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/uvloop-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/uvloop-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/uvloop-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/uvloop-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/uvloop/badges/version.svg)](https://anaconda.org/conda-forge/uvloop)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/uvloop/badges/downloads.svg)](https://anaconda.org/conda-forge/uvloop)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-uvloop-green.svg)](https://anaconda.org/conda-forge/uvloop) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/uvloop.svg)](https://anaconda.org/conda-forge/uvloop) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/uvloop.svg)](https://anaconda.org/conda-forge/uvloop) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/uvloop.svg)](https://anaconda.org/conda-forge/uvloop) |
 
 Installing uvloop
 =================
