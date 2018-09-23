@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: python setup.py install  --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
   skip: True  # [py2k or win]
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - make  # [unix]
   host:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
