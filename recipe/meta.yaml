@@ -1,7 +1,7 @@
 {% set name = "uvloop" %}
-{% set version = "0.11.3" %}
+{% set version = "0.12.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "fd5042d0a2ea07b92d0e2190f7711feb91cde31cf2bf1829e2e8c4c0fdd1f1aa" %}
+{% set hash_value = "afdf34bf507090e4c7f5108a17240982760356b8aae4edd37180ec4f94c36cbb" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash_value }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
   skip: True  # [py2k or win]
 
