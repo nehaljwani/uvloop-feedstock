@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About uvloop
 ============
 
@@ -20,9 +16,61 @@ uvloop is implemented in Cython and uses libuv under the hood.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/uvloop-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/uvloop-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/uvloop-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/uvloop-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2117&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/uvloop-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2117&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/uvloop-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2117&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/uvloop-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.6</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2117&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/uvloop-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.7</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2117&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/uvloop-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Windows</td>
+    <td>
+      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
