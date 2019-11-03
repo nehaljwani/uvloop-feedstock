@@ -11,10 +11,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash_value }}
+  patches:
+    - 0001-sys.set_coroutine_wrapper-is-removed-in-Python-3.8.patch
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv --global-option='build_ext' --global-option='--cython-always'"
   skip: True  # [py2k or win]
 
 requirements:
@@ -23,6 +25,7 @@ requirements:
     - make  # [unix]
   host:
     - python
+    - cython >=0.28
     - pip
   run:
     - python
