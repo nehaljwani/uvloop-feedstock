@@ -1,22 +1,17 @@
 {% set name = "uvloop" %}
 {% set version = "0.14.0" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "123ac9c0c7dd71464f58f1b4ee0bbd81285d96cdda8bc3519281b8973e3a461e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_value }}
-  patches:
-    - 0001-sys.set_coroutine_wrapper-is-removed-in-Python-3.8.patch
+  sha256: 123ac9c0c7dd71464f58f1b4ee0bbd81285d96cdda8bc3519281b8973e3a461e
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv --global-option='build_ext' --global-option='--cython-always'"
+  script: "{{ PYTHON }} -m pip install . -vv --global-option='build_ext' --global-option='--cython-always'"
   skip: True  # [py2k or win]
 
 requirements:
