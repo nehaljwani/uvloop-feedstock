@@ -1,0 +1,12 @@
+diff --git a/uvloop/loop.pyx b/uvloop/loop.pyx
+index c865fed..bb53aa9 100644
+--- a/uvloop/loop.pyx
++++ b/uvloop/loop.pyx
+@@ -1079,7 +1079,7 @@ cdef class Loop:
+         err = system.setsockopt(
+             fd,
+             uv.SOL_SOCKET,
+-            SO_REUSEPORT,
++            uv.SO_REUSEPORT,
+             <char*>&reuseport_flag,
+             sizeof(reuseport_flag))
